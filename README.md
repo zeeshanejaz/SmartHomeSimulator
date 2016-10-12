@@ -83,16 +83,28 @@ The layout of the Smart Home simulator can be modified by editting the ```layout
 ```
 
 ## Supported Devices
-The simulator supports various devices: bulb, air conditioner, powered windows, and CD player. Each of these devices have various built-in features. For example, a bulb can be simply powered on or off, whereas a CD player can be controlled by issues next-track or previous-track commands. We describe the capabilities of these devices as follows.
+The simulator supports various devices: bulb, air conditioner, powered windows, and CD player. Some capabilities are common between all devices, whereas other capabilities are device-specific. For example, a bulb can be simply powered on or off, whereas a CD player can be controlled by issues next-track or previous-track commands.
+
+### Common Features
+Any device can be set offline, which disables any remote access to these devices. However, you can still use the UI to operate these devices. This feature is useful for devices that malfunctioning or currently in private use. Another common feature is that all devices can have associated devices, which can powered on or off together. Further more, each device has a Device ID, which can be used to send commands and read status messages.
 
 ### Bulb
+A bulb is the simplest device, which can just be powered on or off.
 
 ### Window
+```CommandEnabled``` ```TextEnabaled``` ```SafetyRelated```
+
+A powered window is a safety-enabled device. When online and in safe-mode, it can be opened or closed by sending it simple commands. The accepted commands are open and close, mapped to integers values 0 and 1. Window can also return a text status represeting it current state e.g., opened or closed.
 
 ### Air Conditioner
+```CommandEnabled``` ```TextEnabaled```
+
+Air conditioner accepts commands to increase or decrease the desired temperature. When turned on, the air conditioner tries to achieve the desired temperature by cooling or heating. The status and current temperature of the room can be retrieved from the device.
 
 ### CD Player
+```CommandEnabled``` ```TextEnabaled```
 
+A CD player is simple media player with a few built in tracks. When powered on, it can forward, reverse seek a track, or goto next or previous track. Currnet track can be paused or resumed as well. The text status of the CD player returns the current track being played.
 
 ## SmartHome SDK
 
