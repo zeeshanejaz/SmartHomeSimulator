@@ -12,7 +12,7 @@ So I decided to make a visual simulator for a course on UML / OOP and C\++. Usua
 ## Objective
 The objective of this project to give UML/OOP and C\++ beginners an interesting yet easy example to grasp the core ideas. We assume that students will have basic C\++ skills like making a program, compilation, header files, variables, loops, accepting using inputs and showing outputs etc. This project will give student a rich playground to practice concepts like inheritence, polymorphism, overloading, composition and aggregation etc.
 
-[![Smart Home Automation](/screenshot.png)]
+[Smart Home Automation](/screenshot.png)
 
 ## Introduction
 
