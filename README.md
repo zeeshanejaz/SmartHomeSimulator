@@ -49,7 +49,7 @@ The architecture of the system is a simple Client-Server model. A server (simula
 ## SmartHome Layout
 The layout of the Smart Home simulator can be modified by editting the ```layout.xml``` file. This layout file describes the home configuration i.e., how many floors are in the house, how many rooms on each floor, and which devices are located on which floor. It also contains information about the types of supported devices and their pair-links with other devices. Consider the following layout xml data. It tell us that there is a **Bulb** with a Device ID 1 in the garage on the first floor.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Building StreetAddress="36 Symonds Street">
 	<Floor Name="Ground Floor">
@@ -110,7 +110,7 @@ A CD player is simple media player with a few built in tracks. When powered on, 
 
 SmartHome SDK is written in C++ and is provided to students as pre-compiled libraries for 32-bit, 64-bit Linux and Windows. The source code for the SDK is available on a separate GitHub repo. To fulfill the objective of this project, I have made is very simple for the student to consume the SDKs and interface with the simulator e.g., the following code connects with the simualtor and powers on a bulb.
 
-```
+```c++
 #include <iostream>
 #include "SmartHomeSDK.h"
 
