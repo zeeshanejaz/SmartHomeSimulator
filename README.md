@@ -132,4 +132,4 @@ int main()
 }
 ```
 
-Further information on the various methods offered in the SDK and their usage is available on the [SmartHomeSDK repo](https://github.com/zeeshanejaz/SmartHomeSDK) repo.
+Further information on the various methods offered in the SDK and their usage is available on the [SmartHomeSDK repo](https://github.com/zeeshanejaz/SmartHomeSDK).
