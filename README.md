@@ -42,11 +42,11 @@ Example of feature can be the following:
 
 
 ## Architecture
-The architecture of the system is a simple Client-Server model. A server (simulator) accepts an incoming connection made by a user from his machine. The functionality of making the connection is handled by the **SmartHome SDK**. This SDK contains functions for interfacing with the simulator by issuing various types of commands and recieving responses. The SDK is implemented as a shared object (SO) on Linux and as dynamic linked library (DLL) on windows. This allows swapping the SDK by a variant, which talks to an actually physical smart home instead of the simulator.
+The architecture of the system is a simple Client-Server model. A server (simulator) accepts an incoming connection made by a user from his machine. The functionality of making the connection is handled by the **Smart Home SDK**. This SDK contains functions for interfacing with the simulator by issuing various types of commands and recieving responses. The SDK is implemented as a shared object (SO) on Linux and as dynamic linked library (DLL) on windows. This allows swapping the SDK by a variant, which talks to an actually physical smart home instead of the simulator.
 
 ![System Architecture](/architecture.png)
 
-## SmartHome Layout
+## Smart Home Layout
 The layout of the Smart Home simulator can be modified by editting the ```layout.xml``` file. This layout file describes the home configuration i.e., how many floors are in the house, how many rooms on each floor, and which devices are located on which floor. It also contains information about the types of supported devices and their pair-links with other devices. Consider the following layout xml data. It tell us that there is a **Bulb** with a Device ID 1 in the garage on the first floor.
 
 ```xml
@@ -106,9 +106,9 @@ Air conditioner accepts commands to increase or decrease the desired temperature
 
 A CD player is simple media player with a few built in tracks. When powered on, it can forward, reverse seek a track, or goto next or previous track. Currnet track can be paused or resumed as well. The text status of the CD player returns the current track being played.
 
-## SmartHome SDK
+## Smart Home SDK
 
-SmartHome SDK is written in C++ and is provided to students as pre-compiled libraries for 32-bit, 64-bit Linux and Windows. The source code for the SDK is available on a separate GitHub repo. To fulfill the objective of this project, I have made is very simple for the student to consume the SDKs and interface with the simulator e.g., the following code connects with the simualtor and powers on a bulb.
+Smart Home SDK is written in C++ and is provided to students as pre-compiled libraries for 32-bit, 64-bit Linux and Windows. The source code for the SDK is available on a separate GitHub repo. To fulfill the objective of this project, I have made is very simple for the student to consume the SDKs and interface with the simulator e.g., the following code connects with the simualtor and powers on a bulb.
 
 ```c++
 #include <iostream>
@@ -131,3 +131,5 @@ int main()
 	SHAPI_Dispose();
 }
 ```
+
+Further information on the various methods offered in the SDK and their usage is available on the [SmartHomeSDK repo](https://github.com/zeeshanejaz/SmartHomeSDK) repo.
