@@ -1,4 +1,5 @@
 #Smart Home Simulator
+```See Also``` [SmartHomeSDK repo](https://github.com/zeeshanejaz/SmartHomeSDK)
 
 This project is inspired by one of my most favourite shows the **Big Bang Theory**, to be specific, the lamp switch gag.
 
