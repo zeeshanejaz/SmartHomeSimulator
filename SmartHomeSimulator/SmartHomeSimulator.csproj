@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C4CA3D6-9A7C-44C0-9F92-670BE961C139}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartHomeSimulator</RootNamespace>
+    <AssemblyName>SmartHomeSimulator</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>homenet.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdditionalResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdditionalResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Comm\CommClient.cs" />
+    <Compile Include="Comm\Constants.cs" />
+    <Compile Include="Controls\ctlAirConditioner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlAirConditioner.Designer.cs">
+      <DependentUpon>ctlAirConditioner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\InvokeDelegates.cs" />
+    <Compile Include="Test\ctlTestDirectPacket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Test\ctlTestDirectPacket.Designer.cs">
+      <DependentUpon>ctlTestDirectPacket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log\LoggedException.cs" />
+    <Compile Include="Log\LogManager.cs" />
+    <Compile Include="Model\MetaModel.cs" />
+    <Compile Include="Comm\ProtocolManager.cs" />
+    <Compile Include="Comm\CommServer.cs" />
+    <Compile Include="Comm\ProtocolPacket.cs" />
+    <Compile Include="Controls\ctlBulb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlBulb.Designer.cs">
+      <DependentUpon>ctlBulb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlCDPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlCDPlayer.Designer.cs">
+      <DependentUpon>ctlCDPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ctlWindow.Designer.cs">
+      <DependentUpon>ctlWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IctlDevice.cs" />
+    <Compile Include="Model\ModelController.cs" />
+    <Compile Include="Model\BaseResource.cs" />
+    <Compile Include="Model\Interfaces\ICommandEnabled.cs" />
+    <Compile Include="Model\Interfaces\ITextEnabled.cs" />
+    <Compile Include="Model\Interfaces\ISafetyRelated.cs" />
+    <Compile Include="Test\ctlTestSocketPacket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Test\ctlTestSocketPacket.Designer.cs">
+      <DependentUpon>ctlTestSocketPacket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\SerializeableList.cs" />
+    <Compile Include="Util\Utility.cs" />
+    <Compile Include="ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm.Designer.cs">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Building.cs" />
+    <Compile Include="Model\Device.cs" />
+    <Compile Include="Model\Room.cs" />
+    <Compile Include="Parsing\Parser.cs" />
+    <Compile Include="Model\Floor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormFactory.cs" />
+    <EmbeddedResource Include="AdditionalResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdditionalResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctlAirConditioner.resx">
+      <DependentUpon>ctlAirConditioner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctlBulb.resx">
+      <DependentUpon>ctlBulb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctlCDPlayer.resx">
+      <DependentUpon>ctlCDPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctlWindow.resx">
+      <DependentUpon>ctlWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\ctlTestDirectPacket.resx">
+      <DependentUpon>ctlTestDirectPacket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\ctlTestSocketPacket.resx">
+      <DependentUpon>ctlTestSocketPacket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm.resx">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulbStrip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mediaStrip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windowStrip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upDownStrip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\layout.xml" />
+    <Content Include="homenet.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
