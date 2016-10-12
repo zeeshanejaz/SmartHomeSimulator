@@ -2,7 +2,7 @@
 
 This project is inspired by one of my most favourite shows the **Big Bang Theory**, to be specific, the lamp switch gag.
 
-[![Smart Home Automation](https://img.youtube.com/vi/mqp8_ROAIJY/0.jpg)](//www.youtube.com/watch?v=mqp8_ROAIJY "Smart Home Automation")
+[![Smart Home Automation](/title.png)](//www.youtube.com/watch?v=mqp8_ROAIJY "Smart Home Automation")
 
 
 > Howard: Gentlemen, I am now about to send a signal from this laptop through our local ISP, racing down fibre-optic cable at the speed of light to San Francisco, bouncing off a satellite in geosynchronous orbit to Lisbon, Portugal, where the data packets will be handed off to submerged transatlantic cables terminating in Halifax, Nova-Scotia, and transferred across the continent via microwave relays back to our ISP and the X10 receiver attached to this (clicks mouse, lamp switches on) lamp.
