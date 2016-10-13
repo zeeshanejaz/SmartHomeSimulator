@@ -107,6 +107,18 @@ Air conditioner accepts commands to increase or decrease the desired temperature
 
 A CD player is simple media player with a few built in tracks. When powered on, it can forward, reverse seek a track, or go to next or previous track. Current track can be paused or resumed as well. The text status of the CD player returns the current track being played.
 
+## Building
+If you are building under windows, you will need MSBuild or Visual Studio to build the ```SmartHomeSimulator.sln``` solution file. In Linux, the solution can be build using xbuild and mono utilties from the mono-devel package.
+
+```bash
+sudo apt-get install mono-devel
+
+xbuild SmartHomeSimulator.sln
+
+mono bin/Debug/SmartHomeSimulator.exe
+```
+
+
 ## Smart Home SDK
 
 Smart Home SDK is written in C++ and is provided to students as pre-compiled libraries for 32-bit, 64-bit Linux and Windows. The source code for the SDK is available on a separate GitHub repo. To fulfill the objective of this project, I have made is very simple for the student to consume the SDKs and interface with the simulator e.g., the following code connects with the simulator and powers on a bulb.
