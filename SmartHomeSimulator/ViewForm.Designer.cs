@@ -54,11 +54,13 @@
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusConnection});
-            this.statusStrip.Location = new System.Drawing.Point(3, 566);
+            this.statusStrip.Location = new System.Drawing.Point(6, 1066);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(848, 25);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 26, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1554, 25);
             this.statusStrip.TabIndex = 0;
             this.statusStrip.Text = "statusStrip1";
             // 
@@ -76,12 +78,12 @@
             // tabFloors
             // 
             this.tabFloors.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabFloors.Location = new System.Drawing.Point(3, 1);
-            this.tabFloors.Margin = new System.Windows.Forms.Padding(5);
+            this.tabFloors.Location = new System.Drawing.Point(6, 2);
+            this.tabFloors.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
             this.tabFloors.Name = "tabFloors";
             this.tabFloors.Padding = new System.Drawing.Point(5, 5);
             this.tabFloors.SelectedIndex = 0;
-            this.tabFloors.Size = new System.Drawing.Size(848, 435);
+            this.tabFloors.Size = new System.Drawing.Size(1554, 824);
             this.tabFloors.TabIndex = 1;
             // 
             // tabControlBottom
@@ -92,19 +94,21 @@
             this.tabControlBottom.Controls.Add(this.tabPageTestSocket);
             this.tabControlBottom.Controls.Add(this.tabPage1);
             this.tabControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControlBottom.Location = new System.Drawing.Point(3, 439);
+            this.tabControlBottom.Location = new System.Drawing.Point(6, 832);
+            this.tabControlBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabControlBottom.Name = "tabControlBottom";
             this.tabControlBottom.SelectedIndex = 0;
-            this.tabControlBottom.Size = new System.Drawing.Size(848, 127);
+            this.tabControlBottom.Size = new System.Drawing.Size(1554, 234);
             this.tabControlBottom.TabIndex = 2;
             // 
             // tabPageLogs
             // 
             this.tabPageLogs.Controls.Add(this.listBoxLogs);
             this.tabPageLogs.Location = new System.Drawing.Point(4, 4);
+            this.tabPageLogs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPageLogs.Name = "tabPageLogs";
-            this.tabPageLogs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLogs.Size = new System.Drawing.Size(840, 101);
+            this.tabPageLogs.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageLogs.Size = new System.Drawing.Size(1546, 197);
             this.tabPageLogs.TabIndex = 0;
             this.tabPageLogs.Text = "Logs";
             this.tabPageLogs.UseVisualStyleBackColor = true;
@@ -114,9 +118,11 @@
             this.listBoxLogs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBoxLogs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxLogs.FormattingEnabled = true;
-            this.listBoxLogs.Location = new System.Drawing.Point(3, 3);
+            this.listBoxLogs.ItemHeight = 24;
+            this.listBoxLogs.Location = new System.Drawing.Point(6, 6);
+            this.listBoxLogs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.listBoxLogs.Name = "listBoxLogs";
-            this.listBoxLogs.Size = new System.Drawing.Size(834, 95);
+            this.listBoxLogs.Size = new System.Drawing.Size(1534, 185);
             this.listBoxLogs.TabIndex = 1;
             // 
             // tabPageTestDirect
@@ -124,18 +130,20 @@
             this.tabPageTestDirect.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageTestDirect.Controls.Add(this.ctlTestDirectPacket1);
             this.tabPageTestDirect.Location = new System.Drawing.Point(4, 4);
+            this.tabPageTestDirect.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPageTestDirect.Name = "tabPageTestDirect";
-            this.tabPageTestDirect.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTestDirect.Size = new System.Drawing.Size(840, 101);
+            this.tabPageTestDirect.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageTestDirect.Size = new System.Drawing.Size(1547, 197);
             this.tabPageTestDirect.TabIndex = 1;
             this.tabPageTestDirect.Text = "Test Direct";
             // 
             // ctlTestDirectPacket1
             // 
             this.ctlTestDirectPacket1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ctlTestDirectPacket1.Location = new System.Drawing.Point(3, 3);
+            this.ctlTestDirectPacket1.Location = new System.Drawing.Point(6, 6);
+            this.ctlTestDirectPacket1.Margin = new System.Windows.Forms.Padding(11, 11, 11, 11);
             this.ctlTestDirectPacket1.Name = "ctlTestDirectPacket1";
-            this.ctlTestDirectPacket1.Size = new System.Drawing.Size(834, 95);
+            this.ctlTestDirectPacket1.Size = new System.Drawing.Size(1535, 185);
             this.ctlTestDirectPacket1.TabIndex = 0;
             // 
             // tabPageTestSocket
@@ -143,27 +151,30 @@
             this.tabPageTestSocket.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageTestSocket.Controls.Add(this.ctlTestSocketPacket1);
             this.tabPageTestSocket.Location = new System.Drawing.Point(4, 4);
+            this.tabPageTestSocket.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPageTestSocket.Name = "tabPageTestSocket";
-            this.tabPageTestSocket.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTestSocket.Size = new System.Drawing.Size(840, 101);
+            this.tabPageTestSocket.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPageTestSocket.Size = new System.Drawing.Size(1546, 197);
             this.tabPageTestSocket.TabIndex = 2;
             this.tabPageTestSocket.Text = "Test Socket 1";
             // 
             // ctlTestSocketPacket1
             // 
             this.ctlTestSocketPacket1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ctlTestSocketPacket1.Location = new System.Drawing.Point(3, 3);
+            this.ctlTestSocketPacket1.Location = new System.Drawing.Point(6, 6);
+            this.ctlTestSocketPacket1.Margin = new System.Windows.Forms.Padding(11, 11, 11, 11);
             this.ctlTestSocketPacket1.Name = "ctlTestSocketPacket1";
-            this.ctlTestSocketPacket1.Size = new System.Drawing.Size(834, 95);
+            this.ctlTestSocketPacket1.Size = new System.Drawing.Size(1534, 185);
             this.ctlTestSocketPacket1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.ctlTestSocketPacket2);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(840, 101);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage1.Size = new System.Drawing.Size(1546, 197);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Test Socket 2";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -172,18 +183,20 @@
             // 
             this.ctlTestSocketPacket2.BackColor = System.Drawing.SystemColors.Control;
             this.ctlTestSocketPacket2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ctlTestSocketPacket2.Location = new System.Drawing.Point(3, 3);
+            this.ctlTestSocketPacket2.Location = new System.Drawing.Point(6, 6);
+            this.ctlTestSocketPacket2.Margin = new System.Windows.Forms.Padding(11, 11, 11, 11);
             this.ctlTestSocketPacket2.Name = "ctlTestSocketPacket2";
-            this.ctlTestSocketPacket2.Size = new System.Drawing.Size(834, 95);
+            this.ctlTestSocketPacket2.Size = new System.Drawing.Size(1534, 185);
             this.ctlTestSocketPacket2.TabIndex = 1;
             // 
             // splitter1
             // 
             this.splitter1.Cursor = System.Windows.Forms.Cursors.HSplit;
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter1.Location = new System.Drawing.Point(3, 436);
+            this.splitter1.Location = new System.Drawing.Point(6, 826);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(848, 3);
+            this.splitter1.Size = new System.Drawing.Size(1554, 6);
             this.splitter1.TabIndex = 3;
             this.splitter1.TabStop = false;
             // 
@@ -195,17 +208,18 @@
             // 
             // ViewForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(852, 596);
+            this.ClientSize = new System.Drawing.Size(1562, 1100);
             this.Controls.Add(this.tabFloors);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.tabControlBottom);
             this.Controls.Add(this.statusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ViewForm";
-            this.Padding = new System.Windows.Forms.Padding(3, 1, 1, 5);
+            this.Padding = new System.Windows.Forms.Padding(6, 2, 2, 9);
             this.Text = "SmartHome Simulator";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.statusStrip.ResumeLayout(false);

@@ -183,6 +183,7 @@
     <None Include="Resources\upDownStrip.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\layout.xml" />
     <None Include="bin\Release\layout.xml" />
     <Content Include="homenet.ico" />
   </ItemGroup>
